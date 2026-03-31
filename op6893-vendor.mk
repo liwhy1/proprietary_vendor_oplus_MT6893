@@ -391,7 +391,6 @@ PRODUCT_COPY_FILES += \
     vendor/oplus/op6893/proprietary/vendor/etc/init/init.oplus.cust.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.oplus.cust.rc \
     vendor/oplus/op6893/proprietary/vendor/etc/init/init.thermal.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.thermal.rc \
     vendor/oplus/op6893/proprietary/vendor/etc/init/init.thermal_core.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.thermal_core.rc \
-    vendor/oplus/op6893/proprietary/vendor/etc/init/init.thermal_manager.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.thermal_manager.rc \
     vendor/oplus/op6893/proprietary/vendor/etc/init/init.thermalloadalgod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.thermalloadalgod.rc \
     vendor/oplus/op6893/proprietary/vendor/etc/init/init.vtservice_hidl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vtservice_hidl.rc \
     vendor/oplus/op6893/proprietary/vendor/etc/init/init.wlan_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wlan_drv.rc \
@@ -1651,7 +1650,6 @@ PRODUCT_PACKAGES += \
     thermal \
     thermal_core \
     thermal_intf \
-    thermal_manager \
     thermalloadalgod \
     volte_clientapi_ua \
     volte_rcs_ua \
