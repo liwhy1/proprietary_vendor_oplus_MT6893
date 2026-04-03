@@ -22071,14 +22071,6 @@ dex_import {
 }
 
 dex_import {
-    name: "mediatek-common",
-    owner: "oplus",
-    jars: [
-        "proprietary/system/framework/mediatek-common.jar",
-    ],
-}
-
-dex_import {
     name: "mediatek-framework",
     owner: "oplus",
     jars: [

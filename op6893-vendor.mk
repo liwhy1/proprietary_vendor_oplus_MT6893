@@ -1562,7 +1562,6 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentOKGoogleRISCV \
     HotwordEnrollmentXGoogleRISCV \
     mediatek-carrier-config-manager \
-    mediatek-common \
     mediatek-framework \
     mediatek-ims-base \
     mediatek-ims-common \
