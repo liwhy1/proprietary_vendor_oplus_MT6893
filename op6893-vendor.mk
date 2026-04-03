@@ -1018,7 +1018,6 @@ PRODUCT_PACKAGES += \
     libneuron_adapter \
     libneuron_platform \
     libnir_neon_driver_ndk.mtk.vndk \
-    libpowerhalwrap_vendor \
     libratconfig \
     librilfusion \
     libsensor_custom \
