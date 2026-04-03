@@ -7388,6 +7388,46 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "android.hardware.gnss-impl-mediatek",
+    owner: "oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "android.hardware.gnss@2.1-impl-mediatek",
+    owner: "oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/android.hardware.gnss@2.1-impl-mediatek.so",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "android.hardware.sensors@2.X-subhal-mediatek",
     owner: "oplus",
     strip: {
@@ -22158,6 +22198,24 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
+    name: "gnss-mtk.xml",
+    owner: "oplus",
+    src: "proprietary/vendor/etc/vintf/manifest/gnss-mtk.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "gnss@2.1-service-mtk.xml",
+    owner: "oplus",
+    src: "proprietary/vendor/etc/vintf/manifest/gnss@2.1-service-mtk.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
     name: "lbs_hidl_service@1.0.xml",
     owner: "oplus",
     src: "proprietary/vendor/etc/vintf/manifest/lbs_hidl_service@1.0.xml",
@@ -22709,6 +22767,26 @@ cc_prebuilt_binary {
         android_arm64: {
             srcs: [
                 "proprietary/vendor/bin/hw/android.hardware.drm@1.4-service.widevine",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "android.hardware.gnss-service.mediatek",
+    owner: "oplus",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/android.hardware.gnss-service.mediatek",
             ],
         },
     },
