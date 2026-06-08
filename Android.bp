@@ -22789,26 +22789,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "android.hardware.media.c2@1.2-mediatek",
-    owner: "oplus",
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/bin/hw/android.hardware.media.c2@1.2-mediatek",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    check_elf_files: false,
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "android.hardware.media.c2@1.2-mediatek-64b",
     owner: "oplus",
     target: {
@@ -22816,10 +22796,34 @@ cc_prebuilt_binary {
             srcs: [
                 "proprietary/vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b",
             ],
+            shared_libs: [
+                "libstagefright_foundation_v33",
+                "libshim",
+                "libbase",
+                "liblog",
+                "libcodec2",
+                "libutils",
+                "android.hardware.media.c2@1.0",
+                "android.hardware.media.c2@1.1",
+                "android.hardware.media.c2@1.2",
+                "libcodec2_hidl@1.0-v31",
+                "libcodec2_hidl@1.1-v31",
+                "libcodec2_hidl@1.2-v31",
+                "libcodec2_vndk-v31",
+                "libhidlbase",
+                "libavservices_minijail",
+                "libbinder",
+                "libcodec2_mtk_c2store",
+                "libcodec2_mtk_vdec",
+                "libcodec2_mtk_venc",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
         },
     },
     compile_multilib: "64",
-    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -23887,6 +23891,13 @@ install_symlink {
     soc_specific: true,
     installed_location: "lib/libgpudataproducer.so",
     symlink_target: "/vendor/lib/mt6893/libgpudataproducer.so",
+}
+
+install_symlink {
+    name: "vendor_bin_hw_android_hardware_media_c2@1_2-mediatek",
+    soc_specific: true,
+    installed_location: "bin/hw/android.hardware.media.c2@1.2-mediatek",
+    symlink_target: "/vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b",
 }
 
 install_symlink {

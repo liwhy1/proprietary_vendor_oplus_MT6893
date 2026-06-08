@@ -1613,7 +1613,6 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss-service.mediatek \
     android.hardware.graphics.allocator@4.0-service-mediatek \
     android.hardware.keymaster@4.1-service.trustonic \
-    android.hardware.media.c2@1.2-mediatek \
     android.hardware.media.c2@1.2-mediatek-64b \
     android.hardware.neuralnetworks@1.3-service-mtk-neuron \
     android.hardware.secure_element@1.2-service-mediatek \
@@ -1668,6 +1667,7 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.performance@1.0-service
 
 PRODUCT_PACKAGES += \
+    vendor_bin_hw_android_hardware_media_c2@1_2-mediatek \
     vendor_lib_egl_libGLES_mali_so \
     vendor_lib_hw_kmsetkey_default_so \
     vendor_lib_hw_gatekeeper_trustonic_so \
