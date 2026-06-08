@@ -3,6 +3,9 @@
 //
 
 soong_namespace {
+    imports: [
+        "device/oplus/op6893",
+    ],
 }
 
 cc_prebuilt_library_shared {
