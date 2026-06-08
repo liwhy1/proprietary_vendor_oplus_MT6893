@@ -399,31 +399,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "audio.r_submix.mt6893",
-    owner: "oplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/audio.r_submix.mt6893.so",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/audio.r_submix.mt6893.so",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    check_elf_files: false,
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "gps.default",
     owner: "oplus",
     strip: {

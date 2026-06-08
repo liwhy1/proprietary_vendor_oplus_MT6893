@@ -494,7 +494,6 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@7.0-impl-mediatek \
     android.hardware.bluetooth@1.1-impl-mediatek \
     audio.primary.mt6893 \
-    audio.r_submix.mt6893 \
     gps.default \
     kmsetkey.trustonic \
     libMcGatekeeper \
