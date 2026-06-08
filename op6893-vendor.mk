@@ -743,18 +743,7 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.performance@1.0 \
     sound_trigger.primary.default \
     libHEVCdec_sa.ca7.android \
-    libadpcmdec_mtk \
-    libcodec2_mtk_c2store \
-    libcodec2_mtk_vdec \
-    libcodec2_mtk_venc \
-    libcodec2_soft_mtk_alacdec \
-    libcodec2_soft_mtk_apedec \
-    libcodec2_soft_mtk_imaadpcmdec \
-    libcodec2_soft_mtk_mp3dec \
-    libcodec2_soft_mtk_msadpcmdec \
     libcodec2_soft_mtk_wmadec \
-    libcodec2_vpp_qt_plugin \
-    libcodec2_vpp_rs_plugin \
     libdre \
     libdynamiclog \
     libfgauge_gm30 \
@@ -848,7 +837,6 @@ PRODUCT_PACKAGES += \
     lib3a.n3d3a \
     lib3a.sensors.color \
     lib3a.sensors.flicker \
-    libMtkOmxCore \
     libSQLiteModule_VER_ALL \
     libSonyIMX230PdafLibrary \
     libSonyIMX230PdafLibraryWrapper \
@@ -1664,7 +1652,27 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.charger@1.0-service \
     vendor.oplus.hardware.olc@2.0-service \
     vendor.oplus.hardware.oplusSensor@1.0-service \
-    vendor.oplus.hardware.performance@1.0-service
+    vendor.oplus.hardware.performance@1.0-service \
+    libadpcmdec_mtk \
+    libcodec2_hidl@1.0-v31 \
+    libcodec2_hidl@1.1-v31 \
+    libcodec2_hidl@1.2-v31 \
+    libcodec2_hidl_plugin-v31 \
+    libcodec2_mtk_c2store \
+    libcodec2_mtk_vdec \
+    libcodec2_mtk_venc \
+    libcodec2_soft_common-v31 \
+    libcodec2_soft_mtk_alacdec \
+    libcodec2_soft_mtk_apedec \
+    libcodec2_soft_mtk_imaadpcmdec \
+    libcodec2_soft_mtk_mp3dec \
+    libcodec2_soft_mtk_msadpcmdec \
+    libcodec2_vndk-v31 \
+    libcodec2_vpp_qt_plugin \
+    libcodec2_vpp_rs_plugin \
+    libmp3dec_mtk \
+    libsfplugin_ccodec_utils-v31 \
+    libstagefright_bufferqueue_helper-v33
 
 PRODUCT_PACKAGES += \
     vendor_bin_hw_android_hardware_media_c2@1_2-mediatek \

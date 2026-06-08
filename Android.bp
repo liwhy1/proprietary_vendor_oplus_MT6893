@@ -6393,228 +6393,19 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libadpcmdec_mtk",
-    owner: "oplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libadpcmdec_mtk.so",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    check_elf_files: false,
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcodec2_mtk_c2store",
-    owner: "oplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libcodec2_mtk_c2store.so",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    check_elf_files: false,
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcodec2_mtk_vdec",
-    owner: "oplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libcodec2_mtk_vdec.so",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    check_elf_files: false,
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcodec2_mtk_venc",
-    owner: "oplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libcodec2_mtk_venc.so",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    check_elf_files: false,
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcodec2_soft_mtk_alacdec",
-    owner: "oplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libcodec2_soft_mtk_alacdec.so",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    check_elf_files: false,
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcodec2_soft_mtk_apedec",
-    owner: "oplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libcodec2_soft_mtk_apedec.so",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    check_elf_files: false,
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcodec2_soft_mtk_imaadpcmdec",
-    owner: "oplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libcodec2_soft_mtk_imaadpcmdec.so",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    check_elf_files: false,
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcodec2_soft_mtk_mp3dec",
-    owner: "oplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libcodec2_soft_mtk_mp3dec.so",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    check_elf_files: false,
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcodec2_soft_mtk_msadpcmdec",
-    owner: "oplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libcodec2_soft_mtk_msadpcmdec.so",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    check_elf_files: false,
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libcodec2_soft_mtk_wmadec",
     owner: "oplus",
     strip: {
         none: true,
     },
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
-                "proprietary/vendor/lib/libcodec2_soft_mtk_wmadec.so",
+                "proprietary/vendor/lib64/libcodec2_soft_mtk_wmadec.so",
             ],
         },
     },
-    compile_multilib: "32",
-    check_elf_files: false,
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcodec2_vpp_qt_plugin",
-    owner: "oplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libcodec2_vpp_qt_plugin.so",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    check_elf_files: false,
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcodec2_vpp_rs_plugin",
-    owner: "oplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libcodec2_vpp_rs_plugin.so",
-            ],
-        },
-    },
-    compile_multilib: "32",
+    compile_multilib: "64",
     check_elf_files: false,
     prefer: true,
     soc_specific: true,
@@ -8386,25 +8177,6 @@ cc_prebuilt_library_shared {
         android_arm64: {
             srcs: [
                 "proprietary/vendor/lib64/lib3a.sensors.flicker.so",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    check_elf_files: false,
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libMtkOmxCore",
-    owner: "oplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libMtkOmxCore.so",
             ],
         },
     },
@@ -23807,6 +23579,723 @@ cc_prebuilt_binary {
     prefer: true,
     relative_install_path: "hw",
     device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libadpcmdec_mtk",
+    owner: "oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libadpcmdec_mtk.so",
+            ],
+            shared_libs: [
+                "libmtk_drvb",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc",
+                "libc++",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcodec2_hidl@1.0-v31",
+    owner: "oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_hidl@1.0-v31.so",
+            ],
+            shared_libs: [
+                "libbase_shim",
+                "android.hardware.graphics.bufferqueue@1.0",
+                "android.hardware.graphics.bufferqueue@2.0",
+                "android.hardware.graphics.common@1.0",
+                "android.hardware.media@1.0",
+                "android.hardware.media.bufferpool@2.0",
+                "android.hardware.media.c2@1.0",
+                "android.hardware.media.omx@1.0",
+                "libbase",
+                "libcodec2",
+                "libcodec2_vndk-v31",
+                "libcutils",
+                "libhidlbase",
+                "liblog",
+                "libstagefright_bufferpool@2.0.1",
+                "libui-v34",
+                "libutils",
+                "libstagefright_bufferqueue_helper-v33",
+                "libcodec2_hidl_plugin-v31",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcodec2_hidl@1.1-v31",
+    owner: "oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_hidl@1.1-v31.so",
+            ],
+            shared_libs: [
+                "libbase_shim",
+                "android.hardware.graphics.bufferqueue@1.0",
+                "android.hardware.graphics.bufferqueue@2.0",
+                "android.hardware.graphics.common@1.0",
+                "android.hardware.media@1.0",
+                "android.hardware.media.bufferpool@2.0",
+                "android.hardware.media.c2@1.0",
+                "android.hardware.media.c2@1.1",
+                "android.hardware.media.omx@1.0",
+                "libbase",
+                "libcodec2",
+                "libcodec2_hidl@1.0-v31",
+                "libcodec2_vndk-v31",
+                "libcutils",
+                "libhidlbase",
+                "liblog",
+                "libstagefright_bufferpool@2.0.1",
+                "libui-v34",
+                "libutils",
+                "libstagefright_bufferqueue_helper-v33",
+                "libcodec2_hidl_plugin-v31",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcodec2_hidl@1.2-v31",
+    owner: "oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_hidl@1.2-v31.so",
+            ],
+            shared_libs: [
+                "libbase_shim",
+                "android.hardware.graphics.bufferqueue@1.0",
+                "android.hardware.graphics.bufferqueue@2.0",
+                "android.hardware.graphics.common@1.0",
+                "android.hardware.media@1.0",
+                "android.hardware.media.bufferpool@2.0",
+                "android.hardware.media.c2@1.0",
+                "android.hardware.media.c2@1.1",
+                "android.hardware.media.c2@1.2",
+                "android.hardware.media.omx@1.0",
+                "libbase",
+                "libcodec2",
+                "libcodec2_hidl@1.0-v31",
+                "libcodec2_hidl@1.1-v31",
+                "libcodec2_vndk-v31",
+                "libcutils",
+                "libhidlbase",
+                "liblog",
+                "libstagefright_bufferpool@2.0.1",
+                "libui-v34",
+                "libutils",
+                "libstagefright_bufferqueue_helper-v33",
+                "libcodec2_hidl_plugin-v31",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcodec2_hidl_plugin-v31",
+    owner: "oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_hidl_plugin-v31.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "libcodec2",
+                "libcodec2_vndk-v31",
+                "libstagefright_foundation",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcodec2_mtk_c2store",
+    owner: "oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_mtk_c2store.so",
+            ],
+            shared_libs: [
+                "libcodec2_soft_common-v31",
+                "libcutils",
+                "liblog",
+                "libsfplugin_ccodec_utils-v31",
+                "libstagefright_foundation_v33",
+                "libbase",
+                "libcodec2",
+                "libcodec2_vndk-v31",
+                "libutils",
+                "libion",
+                "libion_mtk",
+                "libdmabufheap",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcodec2_mtk_vdec",
+    owner: "oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_mtk_vdec.so",
+            ],
+            shared_libs: [
+                "libformatter",
+                "libdpframework",
+                "android.hardware.graphics.bufferqueue@2.0",
+                "libui-v34",
+                "libgralloc_extra",
+                "libexpat",
+                "libsync",
+                "libhidlbase",
+                "libhwbinder",
+                "libged",
+                "libcodec2_soft_common-v31",
+                "libcutils",
+                "liblog",
+                "libsfplugin_ccodec_utils-v31",
+                "libstagefright_foundation_v33",
+                "libbase",
+                "libcodec2",
+                "libcodec2_vndk-v31",
+                "libutils",
+                "libion",
+                "libdmabufheap",
+                "libion_mtk",
+                "libcodec2_mtk_c2store",
+                "libcodec2_vpp_qt_plugin",
+                "libcodec2_vpp_rs_plugin",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcodec2_mtk_venc",
+    owner: "oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_mtk_venc.so",
+            ],
+            shared_libs: [
+                "libformatter",
+                "libdpframework",
+                "android.hardware.graphics.bufferqueue@2.0",
+                "libui-v34",
+                "libgralloc_extra",
+                "libexpat",
+                "libsync",
+                "libhidlbase",
+                "libhwbinder",
+                "libged",
+                "libcodec2_soft_common-v31",
+                "libcutils",
+                "liblog",
+                "libsfplugin_ccodec_utils-v31",
+                "libstagefright_foundation_v33",
+                "libbase",
+                "libcodec2",
+                "libcodec2_vndk-v31",
+                "libutils",
+                "libion",
+                "libdmabufheap",
+                "libion_mtk",
+                "libcodec2_mtk_c2store",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcodec2_soft_common-v31",
+    owner: "oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_soft_common-v31.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "libcodec2",
+                "libcodec2_vndk-v31",
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libsfplugin_ccodec_utils-v31",
+                "libstagefright_foundation_v33",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcodec2_soft_mtk_alacdec",
+    owner: "oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_soft_mtk_alacdec.so",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcodec2_soft_mtk_apedec",
+    owner: "oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_soft_mtk_apedec.so",
+            ],
+            shared_libs: [
+                "libcodec2_soft_common",
+                "libcodec2_vndk",
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libstagefright_foundation",
+                "libbase",
+                "libcodec2",
+                "libcodec2_mtk_c2store",
+                "libaudioutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcodec2_soft_mtk_imaadpcmdec",
+    owner: "oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_soft_mtk_imaadpcmdec.so",
+            ],
+            shared_libs: [
+                "libcodec2_soft_common",
+                "libcodec2_vndk",
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libstagefright_foundation",
+                "libbase",
+                "libcodec2",
+                "libcodec2_mtk_c2store",
+                "libadpcmdec_mtk",
+                "libmtk_drvb",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcodec2_soft_mtk_mp3dec",
+    owner: "oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_soft_mtk_mp3dec.so",
+            ],
+            shared_libs: [
+                "libcodec2_soft_common",
+                "libcodec2_vndk",
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libstagefright_foundation",
+                "libbase",
+                "libcodec2",
+                "libcodec2_mtk_c2store",
+                "libmp3dec_mtk",
+                "libmtk_drvb",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcodec2_soft_mtk_msadpcmdec",
+    owner: "oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_soft_mtk_msadpcmdec.so",
+            ],
+            shared_libs: [
+                "libcodec2_soft_common",
+                "libcodec2_vndk",
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libstagefright_foundation",
+                "libbase",
+                "libcodec2",
+                "libcodec2_mtk_c2store",
+                "libadpcmdec_mtk",
+                "libmtk_drvb",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcodec2_vndk-v31",
+    owner: "oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_vndk-v31.so",
+            ],
+            shared_libs: [
+                "android.hardware.graphics.bufferqueue@2.0",
+                "android.hardware.graphics.common@1.2",
+                "android.hardware.media.bufferpool@2.0",
+                "libbase",
+                "libcutils",
+                "libhardware",
+                "libhidlbase",
+                "libion",
+                "libdmabufheap",
+                "libfmq",
+                "liblog",
+                "libnativewindow",
+                "libstagefright_foundation_v33",
+                "libstagefright_bufferpool@2.0.1",
+                "libui-v34",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcodec2_vpp_qt_plugin",
+    owner: "oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_vpp_qt_plugin.so",
+            ],
+            shared_libs: [
+                "libcodec2_soft_common-v31",
+                "libsfplugin_ccodec_utils-v31",
+                "libstagefright_foundation_v33",
+                "libcodec2",
+                "libcodec2_vndk-v31",
+                "liblog",
+                "libbase",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcodec2_vpp_rs_plugin",
+    owner: "oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_vpp_rs_plugin.so",
+            ],
+            shared_libs: [
+                "libcodec2_soft_common-v31",
+                "libsfplugin_ccodec_utils-v31",
+                "libstagefright_foundation_v33",
+                "libcodec2",
+                "libcodec2_vndk-v31",
+                "liblog",
+                "libbase",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmp3dec_mtk",
+    owner: "oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libmp3dec_mtk.so",
+            ],
+            shared_libs: [
+                "libmtk_drvb",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc",
+                "libc++",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libsfplugin_ccodec_utils-v31",
+    owner: "oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libsfplugin_ccodec_utils-v31.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "libcodec2",
+                "libcodec2_vndk-v31",
+                "libcutils",
+                "liblog",
+                "libnativewindow",
+                "libstagefright_foundation",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libstagefright_bufferqueue_helper-v33",
+    owner: "oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libstagefright_bufferqueue_helper-v33.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "libcutils",
+                "libhidlbase",
+                "libhidlmemory",
+                "liblog",
+                "libstagefright_foundation",
+                "libui",
+                "libutils",
+                "android.hardware.graphics.bufferqueue@1.0",
+                "android.hardware.graphics.bufferqueue@2.0",
+                "libgui",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
 }
 
 install_symlink {
