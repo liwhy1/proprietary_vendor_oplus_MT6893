@@ -1029,7 +1029,7 @@ PRODUCT_PACKAGES += \
     libDR \
     libmcv_runtime.mtk \
     libmdla_ut \
-    libmnl \
+    libmnl-v30 \
     libneuron_runtime.5 \
     libneuron_runtime \
     libmtkcam_streaminfo_plugin-p1stt \
@@ -1698,7 +1698,6 @@ PRODUCT_PACKAGES += \
     vendor_lib64_libgpudataproducer_so \
     vendor_lib64_libmcv_runtime_mtk_so \
     vendor_lib64_libmdla_ut_so \
-    vendor_lib64_libmnl_so \
     vendor_lib64_libmtk_drvb_so \
     vendor_lib64_libneuron_platform_vpu_so \
     vendor_lib64_libneuron_runtime_5_so \
