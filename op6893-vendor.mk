@@ -571,7 +571,7 @@ PRODUCT_PACKAGES += \
     libcvsd_mtk \
     libdecrypt \
     libfile_op \
-    libformatter \
+    libformatter-v31 \
     libgamehdr \
     libged \
     libgpu_aux \
